@@ -1,4 +1,6 @@
 flask
 gunicorn
 flask-wtf
-coverage3
+coverage
+pytest
+pytest-cov

@@ -26,8 +26,7 @@ jobs:
         run: python -m unittest -v test
       
       - name: Pytest coverage
-        run: |
-          pytest -v  --cov --cov-report=xml --cov-report=html
+        run: coverage xml app.py
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
